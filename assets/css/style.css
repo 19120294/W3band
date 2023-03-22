@@ -79,18 +79,33 @@ html{
     color: #000;
     background-color: #ccc;
 }
+#header .mobile-menu-btn,
 #header .search-button{
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
+#header .menu-icon, 
 #header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
 }
+
 #header .search-button:hover {
     background-color: #f44336;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .mobile-menu-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
 }
 #slider{
     /* min-height: 1500px; */
@@ -118,6 +133,7 @@ html{
 #slider .text-description{
     font-size: 20px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 .mt-8{
     margin-top: 8px !important;
@@ -130,9 +146,12 @@ html{
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading,#content .section-sub-heading{
     text-align: center;
@@ -265,6 +284,7 @@ html{
 }
 #content .contact-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
@@ -436,6 +456,13 @@ html{
 #footer .copyright a{
     color:rgba(0, 0, 0, 0.6);
 
+}
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 @keyframes modalFadeIn {
     from{
